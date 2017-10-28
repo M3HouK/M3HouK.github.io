@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First resposive template</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="logo"><a href="#">Navigation</a></div>
+			<nav class="main-nav">
+				<div class="main-nav__button" onclick="myFunction(this)">
+					<span class="main-nav__button-hamburger"></span>
+				</div>
+				<ul class="main-nav__nav">
+					<li class="main-nav__nav-item"><a href="#">Psd websites</a></li>
+					<li class="main-nav__nav-item"><a href="#">Ui kits</a></li>
+					<li class="main-nav__nav-item"><a href="#">Premium psd files</a></li>
+					<li class="main-nav__nav-item"><a href="#">About</a></li>
+					<li class="main-nav__nav-item"><a href="#">Blog</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="page-headline">
+		<div class="page-headline__inner wrapper">
+			<h1 class="chief-headline">Awesome Free PSD tempaltes & Resources</h1>
+			<p class="page-headline__info">Sub information for site</p>
+		</div>
+	</div>
+	<div class="banner wrapper">
+		<p class="banner_info">I'm like the Robin Hood of PSD files.</p>
+		<div class="banner_more">
+			<span class="banner_more-arrow"></span>
+		</div>
+	</div>
+	<div class="images-container">
+		<div class="images-container__item">
+			<img src="images/img-1.jpg" alt="" class="images-container__img" width="640" height="550">
+		</div>
+		<div class="images-container__item">
+			<img src="images/img-2.jpg" alt="" class="images-container__img" width="640" height="550">
+		</div>
+		<div class="images-container__item">
+			<img src="images/img-3.jpg" alt="" class="images-container__img" width="640" height="550">
+		</div>
+	</div>
+	<section class="about-us">
+		<div class="about-us__inner wrapper">
+			<h2 class="about-us__headline">BlazRobar.com</h2>
+			<div class="about-us__info">
+				<div class="about-us__info-item">
+					<p class="bout-us__info-paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus. 
+					</p>
+					<p class="bout-us__info-paragraph">
+						Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+					</p>
+				</div>
+				<div class="about-us__more-info">
+					<span class="about-us__more-info-btn">Learn More</span>
+				</div>
+				<div class="about-us__info-item about-us__info-item-more">
+					<p class="bout-us__info-paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus. 
+					</p>
+					<p class="bout-us__info-paragraph">
+						Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		function myFunction(x) {
+    		x.classList.toggle("change");
+		};
+
+		$('.main-nav__button').click(function() {
+			$('.main-nav__nav').stop(true, false, true).slideToggle(200);
+		});
+
+		$('.about-us__more-info-btn').click(function() {
+			$('.about-us__info-item-more').stop(true, false, true).slideToggle(200);
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'bpg_square_banner_caps_2013Rg';
+	src: url(../fonts/bpg_square_banner_caps_2013/bpg_square_banner_caps_2013.eot);
+	src: url(../fonts/bpg_square_banner_caps_2013/bpg_square_banner_caps_2013.woff) format('woff'),
+	     url(../fonts/bpg_square_banner_caps_2013/bpg_square_banner_caps_2013.ttf) format('truetype'),
+	     url(../fonts/bpg_square_banner_caps_2013/bpg_square_banner_caps_2013.svg) format('svg');
+} 
+
+@font-face {
+	font-family: 'zekton';
+	src: url(../fonts/zekton/zekton_rg.eot);
+	src: url(../fonts/zekton/zekton_rg.ttf) format('truetype'),
+		 url(../fonts/zekton/zekton_rg.svg) format('svg'),
+		 url(../fonts/zekton/zekton_rg.woff) format('woff');
+	font-style: normal;
+	font-weight: normal;
+}  
+
+@font-face {
+	font-family: 'archyedt-bold';
+	src: url(../fonts/archyedt-bold/archyedt-bold.otf);
+}                        

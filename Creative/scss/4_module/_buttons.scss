@@ -1,0 +1,101 @@
+/*
+-------------------------
+-------------------------
+	Buttons ...............
+-------------------------
+-------------------------
+*/
+
+.btn_mod-1 {
+	background-image: -webkit-linear-gradient(left, $clr-3, $clr-4);
+	background-image: -moz-linear-gradient(left, $clr-3, $clr-4);
+	background-image: -o-linear-gradient(left, $clr-3, $clr-4);
+	background-image: -ms-linear-gradient(left, $clr-3, $clr-4);
+	background-image: linear-gradient(to right, $clr-3, $clr-4);
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+
+.short-about__btn {
+	position: relative;
+	display: inline-block;
+	margin-top: 80px;
+	padding: 25px 150px 25px 60px;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.short-about__btn::after {
+	content: "";
+	position: absolute;
+	top: 28px;
+	right: 40px;
+	display: block;
+	width: 27px;
+	height:19px;
+	background-image: url("../images/arrow.png");
+}
+
+.portfolio__btn {
+	position: relative;
+	display: inline-block;
+	padding: 25px 60px 25px 150px;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-circle-mod {
+	position: absolute;
+	left: 30px;
+	top: 28px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.btn-circle-mod::after,
+.btn-circle-mod::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.btn-circle-mod::before {
+	left: 25px;
+	top: -2px;
+}
+
+.btn-circle-mod::after {
+	left: 52px;
+	top: -2px;
+}
+
+.message__send-btn {
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	padding: 25px 60px 25px 150px;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.message__send-btn::after {
+	content: "";
+	position: absolute;
+	left: 45px;
+	top:25px;
+	display: block;
+	width: 34px;
+	height: 23px;
+	background: url("../images/message-send-icon.png") no-repeat;
+}

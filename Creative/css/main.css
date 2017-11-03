@@ -1613,4 +1613,76 @@ hr {
 .footer .contact__mobile {
   color: #fff; }
 
+/*  
+-------------------------
+-------------------------
+	Media queries..........
+-------------------------
+-------------------------
+*/
+@media screen and (max-width: 950px) {
+  /*  
+  -------------------------
+  -------------------------
+  	Header media...........
+  -------------------------
+  -------------------------
+  */
+  .main-nav, .footer__main-nav {
+    display: none; }
+
+  .contact {
+    display: none; }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #cf38ef;
+    border-radius: 50%;
+    cursor: pointer; }
+
+  .hamburger__btn {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff; }
+
+  .hamburger__btn::before, .hamburger__btn::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff; }
+
+  .hamburger__btn::before {
+    top: -5px; }
+
+  .hamburger__btn::after {
+    bottom: -5px; }
+
+  .panel-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #2d2b2b;
+    z-index: 10; }
+
+  .main-nav__nav-item, .footer__nav-item {
+    display: block;
+    margin: 0 !important; }
+
+  .main-nav__nav-link, .footer__nav-link {
+    padding: 20px 0 20px 40px;
+    color: #cf38ef; }
+
+  .main-nav__nav-link:hover::after, .footer__nav-link:hover::after {
+    display: none; } }
+
 /*# sourceMappingURL=main.css.map */

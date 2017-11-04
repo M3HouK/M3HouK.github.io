@@ -16,6 +16,10 @@
 	padding-left: 100px;
 }
 
+.main-nav .social {
+	display: none;
+}
+
 .main-nav__nav {
 	margin: 0;
 	padding: 0;
@@ -589,24 +593,20 @@
 }
 
 .footer__main-nav {
-	@extend .main-nav;
+
 }
 
 .footer__nav {
-	@extend .main-nav__nav;
+
 }
 
 .footer__nav-item {
-	@extend .main-nav__nav-item;
+
 }
 
 .footer__nav-link {
-	@extend .main-nav__nav-link;
-	color: #fff;
-}
 
-.footer__nav-link:hover::after {
-	background: none;
+	color: #fff;
 }
 
 .footer .contact__mobile {

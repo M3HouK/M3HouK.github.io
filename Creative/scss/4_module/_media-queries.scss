@@ -10,18 +10,10 @@
 	/*  
 	-------------------------
 	-------------------------
-		Header media...........
+		Header style...........
 	-------------------------
 	-------------------------
 	*/
-
-	.main-nav {
-		display: none;
-	}
-
-	.contact { 
-		display: none;
-	}
 
 	.hamburger {
 		display: flex;
@@ -59,28 +51,42 @@
 		bottom: -5px;
 	}
 
-	.panel-nav {
+	.contact {
+		display: none;
+	}
+	
+	.main-nav {
 		position: fixed;
 		top: 0;
 		right: 0;
 		width: 300px;
 		height: 100%;
-		background-color: $clr-5;
+		padding: 0;
+		background-color: $clr-1;
+		text-align:center;
 		z-index: 10;
 	}
-	
-	.main-nav__nav-item {
-		display: block;
-		margin: 0 !important;
-	}
+
+	.main-nav__nav { text-align: center;}
+
+	.main-nav__nav-item { display: block; }	
+
+	.main-nav__nav-item:not(:first-child) { margin: 0; }
 
 	.main-nav__nav-link {
-		padding: 20px 0 20px 40px;
-		color: $clr-3;
+		color: $clr-8;
+		padding: 15px;
+		border-bottom: 1px solid $clr-7;
 	}
 
 	.main-nav__nav-link:hover::after {
 		display: none;
+	}
+
+	.main-nav .social {
+		display: inline-block;
+		padding: 0;
+		margin-top: 50px;
 	}
 
 }

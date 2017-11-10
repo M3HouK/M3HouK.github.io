@@ -4,3 +4,39 @@
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+
+%ul-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+%main-nav-li {
+	position: relative;
+	display: inline-block;
+}
+
+%main-nav-link {
+	display: block;
+	color: $clr-1;
+	text-decoration: none;
+}
+
+
+%contact__mobile {
+	color: $clr-2;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+%social {
+	display: inline-block;
+	margin: 0;
+	padding-left: 40px;
+	list-style: none;
+	line-height: 15px;
+	vertical-align: middle;
+}
+
+%social__item { display: inline-block; }

@@ -9,9 +9,7 @@
 @media screen and (max-width: 950px) {
 	/*  
 	-------------------------
-	-------------------------
 		Header style...........
-	-------------------------
 	-------------------------
 	*/
 
@@ -88,6 +86,156 @@
 		display: inline-block;
 		padding: 0;
 		margin-top: 50px;
+	}
+
+	/*  
+	-------------------------
+		Portfolio style...........
+	-------------------------
+	*/
+
+	.portfolio__btn-box {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.portfolio__b-box {
+		align-self: flex-end;
+		margin-top: 15px;
+	}
+	
+	
+	/*  
+	-------------------------
+		footer style...........
+	-------------------------
+	*/
+
+	.footer__main-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	/*  
+	-------------------------
+		Headline style...........
+	-------------------------
+	*/
+
+	.headline__h {
+		font-size: 45px;
+	}
+
+	/*  
+	-------------------------
+		About style.............
+	-------------------------
+	*/
+
+	.short-about__mg { display: none; }
+
+	.short-about__info {
+		width: 100%;
+		background: url("../images/about-img.png") no-repeat center;
+		background-size: cover;
+	}
+
+	/*  
+	-------------------------
+		Services style..........
+	-------------------------
+	*/
+
+	.services__mg { display: none; }
+
+	.services__info {
+		width: 100%;
+		background: url("../images/services-img.png") no-repeat center;
+		background-size: cover;
+	}
+
+	/*  
+	-------------------------
+		Portfolio style..........
+	-------------------------
+	*/
+
+	.portfolio__logo { display: none; }
+
+	.portfolio__header { justify-content: flex-end; }
+
+	.work-title { 
+		display: none;
+	}
+
+	.works {
+		flex-direction: column;
+	}
+
+	.works-row {
+		flex-direction: row;
+	}
+
+	.works-row:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.work-lg2 {
+		display: none;
+	}
+
+	.work-lg1 {
+		display: block;
+	}
+
+	/*  
+	-------------------------
+		Whats people says........
+	-------------------------
+	*/
+
+	.comments {
+		flex-direction: column;
+	}
+
+	.user {
+		float: none;
+	}
+
+	.user__comment {
+		margin: 15px auto 0;
+		border-left: none;
+		border-top: 4px solid #de4bc6;
+	}
+
+	/*  
+	-------------------------
+		Message .................
+	-------------------------
+	*/
+
+	.message {
+		margin-top: 100px;
+	}
+
+	.message__headline {
+		text-align: center;
+	}
+
+	.message-contact {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.message-contact__r {
+		padding-right: 60px;
+	}
+
+	.message-contact__cont {
+		margin-top: 50px;
+		padding: 0;
 	}
 
 }

@@ -4,6 +4,36 @@
   margin: 0 auto;
   padding: 0 10px; }
 
+.main-nav__nav, .footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__nav-item, .footer__nav-item {
+  position: relative;
+  display: inline-block; }
+
+.main-nav__nav-link, .footer__nav-link {
+  display: block;
+  color: #2a2d2e;
+  text-decoration: none; }
+
+.contact__mobile, .f-contact__mobile {
+  color: #3a4142;
+  font-weight: 700;
+  vertical-align: middle; }
+
+.social, .f-social {
+  display: inline-block;
+  margin: 0;
+  padding-left: 40px;
+  list-style: none;
+  line-height: 15px;
+  vertical-align: middle; }
+
+.social__item, .f-social__item {
+  display: inline-block; }
+
 /*
 -------------------------
 -------------------------
@@ -1046,7 +1076,7 @@ hr {
 .short-about__btn::after {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 39%;
   right: 40px;
   display: block;
   width: 27px;
@@ -1064,7 +1094,7 @@ hr {
 .btn-circle-mod {
   position: absolute;
   left: 30px;
-  top: 28px;
+  top: 39%;
   display: block;
   width: 15px;
   height: 15px;
@@ -1102,7 +1132,7 @@ hr {
   content: "";
   position: absolute;
   left: 45px;
-  top: 25px;
+  top: 39%;
   display: block;
   width: 34px;
   height: 23px;
@@ -1126,22 +1156,8 @@ hr {
 .main-nav .social {
   display: none; }
 
-.main-nav__nav {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.main-nav__nav-item {
-  position: relative;
-  display: inline-block; }
-
 .main-nav__nav-item:not(:first-child) {
   margin-left: 30px; }
-
-.main-nav__nav-link {
-  display: block;
-  color: #2a2d2e;
-  text-decoration: none; }
 
 .main-nav__nav-link:hover::after {
   content: "";
@@ -1152,22 +1168,6 @@ hr {
   width: 120%;
   height: 1px;
   background-color: #2a2d2e; }
-
-.contact__mobile {
-  color: #3a4142;
-  font-weight: 700;
-  vertical-align: middle; }
-
-.social {
-  display: inline-block;
-  margin: 0;
-  padding-left: 40px;
-  list-style: none;
-  line-height: 15px;
-  vertical-align: middle; }
-
-.social__item {
-  display: inline-block; }
 
 .social__item:not(:first-child) {
   margin-left: 20px; }
@@ -1399,6 +1399,9 @@ hr {
   outline: 2px solid #fff;
   outline-offset: -20px; }
 
+.work-lg1 {
+  display: none; }
+
 .portfolio__btn-box {
   display: flex;
   justify-content: space-between;
@@ -1604,14 +1607,25 @@ hr {
 -------------------------
 */
 .footer__inner {
+  justify-content: space-between;
   align-items: center;
   padding-top: 100px; }
+
+.footer__main-nav {
+  flex-grow: 1;
+  padding-left: 100px; }
+
+.footer__nav-item:not(:first-child) {
+  margin-left: 30px; }
 
 .footer__nav-link {
   color: #fff; }
 
-.footer .contact__mobile {
+.f-contact__mobile {
   color: #fff; }
+
+.f-social__item:not(:first-child) {
+  margin-left: 20px; }
 
 /*  
 -------------------------
@@ -1623,9 +1637,7 @@ hr {
 @media screen and (max-width: 950px) {
   /*  
   -------------------------
-  -------------------------
   	Header style...........
-  -------------------------
   -------------------------
   */
   .hamburger {
@@ -1694,6 +1706,129 @@ hr {
   .main-nav .social {
     display: inline-block;
     padding: 0;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  /*  
+  -------------------------
+  	Portfolio style...........
+  -------------------------
+  */
+  .portfolio__btn-box {
+    flex-direction: column;
+    align-items: stretch; }
+
+  .portfolio__b-box {
+    align-self: flex-end;
+    margin-top: 15px; }
+
+  /*  
+  -------------------------
+  	footer style...........
+  -------------------------
+  */
+  .footer__main-nav {
+    display: none; } }
+@media screen and (max-width: 780px) {
+  /*  
+  -------------------------
+  	Headline style...........
+  -------------------------
+  */
+  .headline__h {
+    font-size: 45px; }
+
+  /*  
+  -------------------------
+  	About style.............
+  -------------------------
+  */
+  .short-about__mg {
+    display: none; }
+
+  .short-about__info {
+    width: 100%;
+    background: url("../images/about-img.png") no-repeat center;
+    background-size: cover; }
+
+  /*  
+  -------------------------
+  	Services style..........
+  -------------------------
+  */
+  .services__mg {
+    display: none; }
+
+  .services__info {
+    width: 100%;
+    background: url("../images/services-img.png") no-repeat center;
+    background-size: cover; }
+
+  /*  
+  -------------------------
+  	Portfolio style..........
+  -------------------------
+  */
+  .portfolio__logo {
+    display: none; }
+
+  .portfolio__header {
+    justify-content: flex-end; }
+
+  .work-title {
+    display: none; }
+
+  .works {
+    flex-direction: column; }
+
+  .works-row {
+    flex-direction: row; }
+
+  .works-row:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px; }
+
+  .work-lg2 {
+    display: none; }
+
+  .work-lg1 {
+    display: block; }
+
+  /*  
+  -------------------------
+  	Whats people says........
+  -------------------------
+  */
+  .comments {
+    flex-direction: column; }
+
+  .user {
+    float: none; }
+
+  .user__comment {
+    margin: 15px auto 0;
+    border-left: none;
+    border-top: 4px solid #de4bc6; }
+
+  /*  
+  -------------------------
+  	Message .................
+  -------------------------
+  */
+  .message {
+    margin-top: 100px; }
+
+  .message__headline {
+    text-align: center; }
+
+  .message-contact {
+    flex-direction: column;
+    align-items: center; }
+
+  .message-contact__r {
+    padding-right: 60px; }
+
+  .message-contact__cont {
+    margin-top: 50px;
+    padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */

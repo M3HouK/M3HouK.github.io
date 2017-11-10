@@ -21,14 +21,11 @@
 }
 
 .main-nav__nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	@extend %ul-reset;
 }
 
 .main-nav__nav-item {
-	position: relative;
-	display: inline-block;
+	@extend %main-nav-li;
 }
 
 .main-nav__nav-item:not(:first-child) {
@@ -36,9 +33,7 @@
 }
 
 .main-nav__nav-link {
-	display: block;
-	color: $clr-1;
-	text-decoration: none;
+	@extend %main-nav-link;
 }
 
 .main-nav__nav-link:hover::after {
@@ -56,22 +51,15 @@
 }
 
 .contact__mobile {
-	color: $clr-2;
-	font-weight: 700;
-	vertical-align: middle;
+	@extend %contact__mobile;
 }
 
 .social {
-	display: inline-block;
-	margin: 0;
-	padding-left: 40px;
-	list-style: none;
-	line-height: 15px;
-	vertical-align: middle;
+	@extend %social;
 }
 
 .social__item {
-	display: inline-block;
+	@extend %social__item;
 }
 
 .social__item:not(:first-child) {
@@ -342,6 +330,10 @@
 	outline-offset: -20px;
 }
 
+.work-lg1 {
+	display: none;
+}
+
 .portfolio__btn-box {
 	display: flex;
 	justify-content: space-between;
@@ -588,27 +580,52 @@
 */
 
 .footer__inner {
+	justify-content: space-between;
 	align-items: center;
 	padding-top: 100px;
 }
 
 .footer__main-nav {
-
+	flex-grow: 1;
+	padding-left: 100px;
 }
 
 .footer__nav {
-
+	@extend %ul-reset;
 }
 
 .footer__nav-item {
+	@extend %main-nav-li;
+}
 
+.footer__nav-item:not(:first-child) {
+	margin-left: 30px;
 }
 
 .footer__nav-link {
-
+	@extend %main-nav-link;
 	color: #fff;
 }
 
-.footer .contact__mobile {
+.f-contact {
+
+}
+
+.f-contact__mobile {
+	@extend %contact__mobile;
 	color: #fff;
 }
+
+.f-social {
+	@extend %social;
+}
+
+.f-social__item {
+	@extend %social__item;
+}
+
+.f-social__item:not(:first-child) {
+	margin-left: 20px;
+}
+
+.f-social__link {}

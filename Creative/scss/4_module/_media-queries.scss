@@ -239,3 +239,99 @@
 	}
 
 }
+
+@media screen and (max-width: 550px) {
+	/*  
+	-------------------------
+		Headline .................
+	-------------------------
+	*/
+
+	.headline__img {
+		display: none;
+	}
+
+	.headline__h {
+		position: static;
+		padding: 0 20px;
+		margin: 40px auto 30px;
+		box-sizing: border-box;
+	}
+
+	/*  
+	-------------------------
+		About style.............
+	-------------------------
+	*/
+	.short-about__info {
+		text-align: center;
+	}
+
+	.short-about__info {
+		background: none;
+	}
+
+	/*  
+	-------------------------
+		Services style..........
+	-------------------------
+	*/
+
+	.services__info {
+		background: none;
+		text-align: center;
+	}
+	
+	.services__nav {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.services__nav-box {
+		flex-direction: column;
+	}
+
+	.services__nav-box:nth-child(1) {
+		margin-bottom: 0;
+	}
+
+	.services__nav-item {
+		margin-bottom: 40px;
+	}
+
+	.services__nav-box:nth-child(2) .services__nav-item:last-child {
+		margin-bottom: 0;
+	}
+
+	/*  
+	-------------------------
+		Portfolio style..........
+	-------------------------
+	*/
+
+	.portfolio__headline {
+		text-align: center;
+	}
+
+	.portfolio__p2 {
+		text-align: center;
+	}
+
+	.portfolio__b-box {
+		align-self: center;
+	}
+
+	/*  
+	-------------------------
+		Whats people says........
+	-------------------------
+	*/
+
+	.user-comments {
+		text-align: center;
+	}
+	
+	.switch {
+		display: none;
+	}
+}

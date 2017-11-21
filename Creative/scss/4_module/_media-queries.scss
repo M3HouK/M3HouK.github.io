@@ -334,4 +334,43 @@
 	.switch {
 		display: none;
 	}
+
+	/*  
+	-------------------------
+		Message .................
+	-------------------------
+	*/
+	
+	.message-contact__r {
+		padding-right: 0;
+	}
+
+	.message__socials {
+		display: none;
+	}
+
+	.message-contact__cont {
+		font-size: 16px;
+	}
+
+	/*  
+	-------------------------
+		Portfolio style..........
+	-------------------------
+	*/
+
+	.footer__inner {
+		flex-direction: column;
+	}
+
+	.f-contact {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+
+	.f-social {
+		padding-left: 0;
+		margin-top: 10px;
+	}
 }

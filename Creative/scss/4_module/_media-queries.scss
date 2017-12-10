@@ -57,16 +57,32 @@
 		position: fixed;
 		top: 0;
 		right: 0;
-		display: none;
-		width: 300px;
+		display: block;
+		width: 0;
 		height: 100%;
 		padding: 0;
 		background-color: $clr-1;
 		text-align:center;
 		z-index: 10;
+		transition: width 100ms linear;
 	}
 
-	.main-nav__nav { text-align: center;}
+	.side-menu-close {
+		display: block;
+		position: absolute;
+		left: 10px;
+		top: 16px;
+		color: $clr-3;
+		font-size: 35px;
+		font-weight: 900;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	.main-nav__nav { 
+		text-align: center;
+		padding-top: 50px;
+	}
 
 	.main-nav__nav-item { display: block; }	
 
@@ -76,6 +92,10 @@
 		color: $clr-8;
 		padding: 15px;
 		border-bottom: 1px solid $clr-7;
+	}
+
+	.main-nav__nav-item:first-child .main-nav__nav-link {
+		border-top: 1px solid $clr-7;
 	}
 
 	.main-nav__nav-link:hover::after {

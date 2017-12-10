@@ -15,7 +15,8 @@
 				<img src="images/logo.png" alt="Logo">
 			</a>
 		</div>
-		<nav class="main-nav">
+		<nav class="main-nav" id="main-nav">
+			<span class="side-menu-close" onclick="closeSlideMenu()">&times;</span>
 			<ul class="main-nav__nav">
 				<li class="main-nav__nav-item">
 					<a href="#" class="main-nav__nav-link">Services</a>
@@ -81,7 +82,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="hamburger">
+		<div class="hamburger" onclick="openSlideMenu()">
 			<span class="hamburger__btn"></span>
 		</div>
 	</header>
@@ -343,9 +344,13 @@
 
 
 	<script>
-		$('.hamburger').click(function() {
-			$('.main-nav').stop(true, false, true).slideToggle(200);
-		});
+		function openSlideMenu() {
+			document.getElementById('main-nav').style.width = "300px";
+		}
+
+		function closeSlideMenu() {
+			document.getElementById('main-nav').style.width = "0";
+		}
 	</script>
 
 </body>

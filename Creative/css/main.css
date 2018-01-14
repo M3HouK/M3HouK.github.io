@@ -1626,7 +1626,8 @@ hr {
     z-index: 10;
     -webkit-transition: width 100ms linear;
     -o-transition: width 100ms linear;
-    transition: width 100ms linear; }
+    transition: width 100ms linear;
+    overflow: auto; }
   .side-menu-close {
     display: block;
     position: absolute;
@@ -1655,7 +1656,8 @@ hr {
   .main-nav .social {
     display: inline-block;
     padding: 0;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 30px; }
   /*  
 	-------------------------
 		Portfolio style...........

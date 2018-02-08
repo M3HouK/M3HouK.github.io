@@ -1,0 +1,34 @@
+////////////////////////
+		// Layout //
+////////////////////////
+
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.header__inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+
+.header-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.header-bg__images {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	animation: bg-anim 10s infinite;
+}
+

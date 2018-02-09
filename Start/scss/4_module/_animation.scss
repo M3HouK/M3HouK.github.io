@@ -1,0 +1,32 @@
+
+@keyframes bg-anim {
+
+	0% {
+		transform: translateX(0);
+	}
+
+	30% {
+		transform: translateX(0);
+	}
+
+	32% {
+		transform: translateX(-100%);
+	}
+
+	62% {
+		transform: translateX(-100%);
+	}
+
+	64% {
+		transform: translateX(-200%);
+	}
+
+	97% {
+		transform: translateX(-200%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+
+}

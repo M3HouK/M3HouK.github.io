@@ -53,3 +53,22 @@
 	padding-left: 15px;
 	padding-right: 15px;	
 }
+
+.gallery__inner {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.gallery__row {
+	width: 50%;
+}
+
+
+
+.footer {
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #040404;
+	text-align: right;
+}

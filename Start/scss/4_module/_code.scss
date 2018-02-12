@@ -12,9 +12,10 @@
 	left: 50%;
 	top: 3vh;
 	display: block;
-	width: 400px;
+	width: 200px;
 	height: auto;	
 	transform: translateX(-50%);
+	transition: all .3s linear;
 }
 
 .header__nav {
@@ -103,7 +104,7 @@
 
 .main-headline {
 	font-family: Acadian;
-	font-size: 90px;
+	font-size: 40px;
 	text-align: center;
 	position: absolute;
 	text-align: center;
@@ -114,6 +115,7 @@
 	padding: 0;
 	letter-spacing: 5px;
 	text-shadow: 0 0 30px #000;
+	transition: all .3s linear;
 }
 
 ////////////////////////
@@ -122,42 +124,24 @@
 
 .line-break{ display: block; }
 
-
-
 .section-headline {
 	font-family: Acadian;
 	text-align: center;
-	font-size: 70px;
+	font-size: 30px;
 	margin: 0;
+	transition: all .3s linear;
 }
 
-
-
-
-
-.gallery__inner {
-	display: flex;
-	padding-top: 20px;
-}
-
-.gallery__fig {
+.gallery__link {
+	display: block;
 	margin: 0;
 	padding: 10px;
 	transition: all .3s; 
-	display: block;
 }
 
-.gallery__fig img {
 
+.gallery__link img {
 	border: 1px solid rgba(255, 255, 255, .5);
 	box-shadow: 0 0 1px #fff;
-}
-
-.gallery__fig:hover {
-	transform: scale(1.02);
-}
-
-.gallery__fig img:hover {
-	box-shadow: 0 0 10px #fff;
 }
 

@@ -1,0 +1,108 @@
+			////////////////////////
+				// Layout //
+			////////////////////////
+
+
+.whole-absolute {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.header__inner {
+	z-index: 3;
+}
+
+
+.header-bg {
+	background: url("../images/old-img34.jpeg") no-repeat center center;
+	background-size: cover;
+}
+
+
+.buttons {
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index:3;
+}
+
+
+
+.gallery-button {
+	display: block;
+	background-color: rgba(33, 33, 33, .9);
+	padding: 15px 30px;
+	color: #fff;
+	box-shadow: 0 0 5px #fff;
+}
+.gallery-button:first-child {
+	margin-bottom: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.gallery-button:last-child {
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+} 
+
+.gallery-button:focus {
+	outline: none;
+}
+
+
+
+
+
+
+.slider {
+	padding: 10px;
+}
+
+.slider__inner{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.section {
+	display: none;
+}
+
+.section-head {
+	padding-top: 50px;
+}
+
+
+.gallery {
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+
+.gallery__inner {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.gallery__row {
+	width: 50%;
+}
+
+
+
+.footer {
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #040404;
+	text-align: right;
+}

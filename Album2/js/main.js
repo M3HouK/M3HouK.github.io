@@ -10,4 +10,17 @@ $("[data-fancybox]").fancybox({
 		autoStart : true,
 		speed     : 4000
 	}
-	});
+});
+
+var oldAl = document.getElementById('old');
+var newAl = document.getElementById('new');
+
+function songOne() {
+	oldAl.play();
+	newAl.pause();
+}
+
+function songTwo() {
+	newAl.play();
+	oldAl.pause();
+}

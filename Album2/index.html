@@ -16,20 +16,19 @@
 <body>
 
 	<header class="header">
-		<div class="header-bg whole-absolute">
-    </div>
-		</div>
+		<div class="header-bg whole-absolute"></div>
 		<div class="header__inner whole-absolute">
 			<a href="#" class="logo">
 				<img src="images/logo-png.png" class="img-responsive" alt="logo" title="Home page">
 			</a>
 			<div class="buttons">
-				<a href="images/old-img1.jpeg" class="gallery__link gallery-button"  data-fancybox="group1">Старый Альбом</a>
-				<a href="images/new-img1.jpeg" class="gallery__link gallery-button"  data-fancybox="group2">Новый Альбом</a>
+				<a href="images/old-img1.jpeg" class="gallery__link gallery-button"  data-fancybox="group1" onclick="songOne()">Старый Альбом</a>
+				<a href="images/new-img1.jpeg" class="gallery__link gallery-button"  data-fancybox="group2" onclick="songTwo()">Новый Альбом</a>
 			</div>
 		</div>
+		<audio src="audio/old.mp3" class="old" id="old" controls loop></audio>
+		<audio src="audio/new.mp3" class="new" id="new" controls loop></audio>
 	</header>
-
 	<section class="section">
 		<div class="section-head">
 			<h2 class="section-headline">Старый Альбом</h2>
@@ -45,6 +44,7 @@
 					<a href="images/old-img7.jpeg" class="gallery__link"  data-fancybox="group1"><img src="images/old-img7.jpeg" alt="" class="img-responsive"></a>
 					<a href="images/old-img29.jpg" class="gallery__link"  data-fancybox="group1"><img src="images/old-img29.jpg" alt="" class="img-responsive"></a>
 					<a href="images/old-img35.jpg" class="gallery__link"  data-fancybox="group1"><img src="images/old-img35.jpg" alt="" class="img-responsive"></a>
+					<a href="images/old-img39.jpg" class="gallery__link"  data-fancybox="group1"><img src="images/old-img39.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="gallery__row">
 					<a href="images/old-img8.jpeg" class="gallery__link"  data-fancybox="group1"><img src="images/old-img8.jpeg" alt="" class="img-responsive"></a>
@@ -108,6 +108,7 @@
 					<a href="images/new-img37.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img37.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img35.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img35.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img43.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img43.jpg" alt="" class="img-responsive"></a>
+					<a href="images/new-img47.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img47.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="gallery__row">
 					<a href="images/new-img8.jpeg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img8.jpeg" alt="" class="img-responsive"></a>
@@ -122,6 +123,7 @@
 					<a href="images/new-img34.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img34.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img42.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img42.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img44.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img44.jpg" alt="" class="img-responsive"></a>
+					<a href="images/new-img48.jpeg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img48.jpeg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="gallery__row">
 					<a href="images/new-img15.jpeg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img15.jpeg" alt="" class="img-responsive"></a>
@@ -135,6 +137,7 @@
 					<a href="images/new-img36.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img36.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img40.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img40.jpg" alt="" class="img-responsive"></a>
 					<a href="images/new-img45.jpg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img45.jpg" alt="" class="img-responsive"></a>
+					<a href="images/new-img49.jpeg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img49.jpeg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="gallery__row">
 					<a href="images/new-img22.jpeg" class="gallery__link"  data-fancybox="group2"><img src="images/new-img22.jpeg" alt="" class="img-responsive"></a>

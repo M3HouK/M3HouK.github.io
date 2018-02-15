@@ -35,4 +35,11 @@
 }
 
 
-
+.old,.new {
+ position: absolute;
+ z-index: 212;
+ visibility: hidden;
+}
+.old {
+	top: 100px;
+}

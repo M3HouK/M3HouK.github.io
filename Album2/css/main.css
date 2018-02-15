@@ -931,6 +931,14 @@ hr {
   -o-transition: all .3s linear;
   transition: all .3s linear; }
 
+.old, .new {
+  position: absolute;
+  z-index: 212;
+  visibility: hidden; }
+
+.old {
+  top: 100px; }
+
 @-webkit-keyframes bg-anim {
   0% {
     -webkit-transform: translateX(0);

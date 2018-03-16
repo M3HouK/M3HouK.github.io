@@ -1,0 +1,60 @@
+////////////////////////
+		// Placeholders //
+////////////////////////
+
+//		Font weights 
+
+%proxima-nova-light {
+	font-family: "Proxima Nova", Arial, sans-serif;
+	font-weight: 300;
+}
+
+%proxima-nova-regular {
+	font-family: "Proxima Nova", Arial, sans-serif;
+	font-weight: 400;
+}
+
+%proxima-nova-semi-bold {
+	font-family: "Proxima Nova", Arial, sans-serif;
+	font-weight: 600;
+}
+
+%proxima-nova-bold {
+	font-family: "Proxima Nova", Arial, sans-serif;
+	font-weight: 700;
+}
+
+%proxima-nova-black {
+	font-family: "Proxima Nova", Arial, sans-serif;
+	font-weight: 900;
+}
+
+//		whole absolute element
+
+%whole-absolute {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+//		wrappers max-width 
+
+%wrapper-max-width {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// 		line break
+
+%line-break { display: block; }
+
+
+//		font size
+
+%font-size-big {
+	font-size: 90px;
+}
+
+

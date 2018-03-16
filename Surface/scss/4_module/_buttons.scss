@@ -1,0 +1,75 @@
+////////////////////////
+		// Buttons //
+////////////////////////
+
+// App Buttons
+
+.app-btn {
+	position: relative;
+	display: inline-block;
+	width: 310px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $blue-violet;
+	box-shadow: 0 16px 24px $navy;
+	border-radius: 39px;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 1.1;
+	transition: all .3s linear;
+	@include xl {
+		width: 270px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}
+}
+
+.app-btn_line-break {
+	@extend %proxima-nova-semi-bold;
+	@extend %line-break;
+}
+
+.apple-btn {
+	margin-right: 23px;
+	padding-left: 105px;
+	transition: all .3s linear;
+	@include xl {
+		padding-left: 90px;
+	}
+}
+
+.google-btn {
+	margin-left: 23px;
+	padding-left: 125px;
+	transition: all .3s linear;
+	@include xl {
+		padding-left: 105px;
+	}
+}
+
+.apple-btn_icon {
+	position: absolute;
+	top: 50%;
+	left: 45px;
+	transform: translateY(-50%);
+	font-size: 42px;
+	transition: all .3s linear;
+	@include xl {
+		top: 48%;
+		left: 40px;
+		font-size: 35px;
+	}
+}
+
+.google-btn_icon {
+	position: absolute;
+	top: 50%;
+	left: 63px;
+	transform: translateY(-50%);
+	font-size: 39px;
+	transition: all .3s linear;
+	@include xl {
+		left: 55px;
+		font-size: 32px;
+	}
+}

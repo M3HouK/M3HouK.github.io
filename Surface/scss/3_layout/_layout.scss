@@ -8,6 +8,9 @@
 
 .main-home-p {
 	overflow: hidden;
+	@include md {
+		background-color: #1b1d1f;
+	}
 }
 
 .main {
@@ -22,6 +25,12 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	@include lg {
+		padding-bottom: 20px;
+	}
+	@include md {
+		background-color: #1b1d1f;
+	}
 }
 
 .footer {

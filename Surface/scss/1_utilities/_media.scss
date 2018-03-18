@@ -1,0 +1,42 @@
+// Media queries max width breakpoint variables 
+
+$screen-xxl-max: 1450px;
+
+$screen-xl-max: 1200px;
+
+$screen-lg-max: 992px;
+
+$screen-md-max: 768px;
+
+$screen-sm-max: 400px;
+
+
+@mixin xxl {
+	@media screen and (max-width: $screen-xxl-max) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media screen and (max-width: $screen-xl-max) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (max-width: $screen-lg-max) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (max-width: $screen-md-max) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media screen and (max-width: $screen-sm-max) {
+		@content;
+	}
+}

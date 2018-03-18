@@ -26,7 +26,10 @@
 				<h1 class="main-headline">Be recruited</h1>
 				<h1 class="main-headline main-headline--r">Play college sports</h1>
 			</hgroup>
-			<nav class="main-nav">
+			<div class="nav-btn">
+				<span class="nav-btn__inner"></span>
+			</div>
+			<nav class="main-nav" id="main-nav">
 				<ul>
 					<li class="nav-elem"><a href="#" class="nav-link">Football</a></li>
 					<li class="nav-elem"><a href="#" class="nav-link">Basketball</a></li>
@@ -137,7 +140,10 @@
 	</main>
 	<section class="section-lf">
 		<div class="lf-c">
-			<div class="lf-bg lf-bg1 lf-bg--l"></div>
+			<div class="lf-bg lf-bg--l">
+				<div class="lf-bg__shadow"></div>
+				<div class="lf-bg1"></div>
+			</div>
 			<div class="lf-row lf-row--r">
 				<h2 class="lf-title">Be active</h2>
 				<p class="lf-paragraph">Post videos with your skills, Like and follow others to be  more popular.
@@ -153,13 +159,19 @@
 				<p class="lf-paragraph lf-paragraph--r">Contact others to find right coach  or athlete you are looking for.
 				</p>
 			</div>
-			<div class="lf-bg lf-bg2 lf-bg--r"></div>
+			<div class="lf-bg lf-bg--r">
+				<div class="lf-bg__shadow"></div>
+				<div class="lf-bg2"></div>
+			</div>
 			<div class="lf-num lf-num--r">
 				<span class="lf-num__n">02</span>
 			</div>
 		</div>
 		<div class="lf-c">
-			<div class="lf-bg lf-bg3 lf-bg--l"></div>
+			<div class="lf-bg lf-bg--l">
+				<div class="lf-bg__shadow"></div>
+				<div class="lf-bg3"></div>
+			</div>
 			<div class="lf-row lf-row--r">
 				<h2 class="lf-title">Work it</h2>
 				<p class="lf-paragraph">Enjoy being a student athlete, the recruiting 
@@ -203,5 +215,24 @@
 		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.nav-btn').click(function(){
+				$('.nav-btn').toggleClass('open');
+			});
+		});
+
+
+		$(document).ready(function(){
+			$('.nav-btn').click(function(){
+				$('.main-nav').toggleClass('main-nav--open');
+			});
+		});
+
+		var mainNav = document.getElementById('main-nav');
+		
+	
+
+	</script>
 </body>
 </html>

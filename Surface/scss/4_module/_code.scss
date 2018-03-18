@@ -115,6 +115,12 @@
 		height: 3px;
 		transform: rotate(-53deg);
 	}
+	@include sm {
+		width: 170px;
+		height: 3px;
+		left: 50%;
+		transform: translateX(-50%) rotate(-53deg);
+	}
 }
 
 .main-headline {
@@ -137,6 +143,11 @@
 		font-size: 43px;
 		letter-spacing: 2px;
 	}
+	@include sm {
+		font-size: 36px;
+		text-align: center;
+		line-height: .9;
+	}
 }
 
 .main-headline--r {
@@ -151,6 +162,11 @@
 	}
 	@include md {
 	
+	}
+	@include sm {
+		margin-top: 0;
+		font-size: 36px;
+		text-align: center;
 	}
 }
 
@@ -262,6 +278,7 @@
 		margin: 0;
 		z-index: 10;
 		background-color: #0a0e34;
+		overflow: auto;
 	}
 }
 
@@ -270,6 +287,7 @@
 .main-nav ul {
 	@include md {
 		margin-top: 80px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -609,6 +627,9 @@
 		max-width: 250px;
 		right: 0;
 	}
+	@include sm {
+		max-width: 190px;
+	}
 }
 
 .background-basketballer {
@@ -627,6 +648,10 @@
 		min-width: 380px;
 		left: auto;
 		right: 0;
+	}
+	@include sm {
+		top: -10px;
+		min-width: 280px;
 	}
 }
 
@@ -658,6 +683,9 @@
 	@include xxl {
 		height: 5px;
 	}
+	@include lg {
+		height: 3px;
+	}
 }
 
 .background-basketballer::before,
@@ -668,6 +696,9 @@
 	transition: all .3s linear;
 	@include xxl {
 		height: 5px;
+	}
+	@include lg {
+		height: 3px;
 	}
 }
 
@@ -766,6 +797,10 @@
 	@include lg {
 		
 	}
+	@include md {
+		min-height: 350px;
+		padding-bottom: 45px;
+	}
 }
 
 // Section little info Backgrounds 
@@ -778,14 +813,9 @@
 		bottom: 0;
 		width: 80%;
 		height: 80%;
-		&::before {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, .8);
-			z-index: 1;
-		}
+	}
+	@include md {
+		height: 100%;
 	}
 }
 
@@ -795,11 +825,23 @@
 	@include lg {
 		left: 0;
 	}
+	@include md {
+		left: 50%;
+		top: 0;
+		width: 98%;
+		transform: translateX(-50%);
+	}
 }
 
 .lf-bg--r {
 	@include lg {
 		right: 0;
+	}
+	@include md {
+		left: 50%;
+		top: 0;
+		width: 98%;
+		transform: translateX(-50%);
 	}
 }
 
@@ -810,6 +852,23 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	@include lg {
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .8);
+			z-index: 1;
+		}
+	}
+	@include md {
+		left: 50%;
+		bottom: 0;
+		width: 95%;
+		height: 80%;
+		transform: translateX(-50%);
+	}
 }
 
 .lf-bg1 {
@@ -837,12 +896,19 @@
 		height: 100%;
     background-color: $black;
 	}
+	@include md {
+		height: 80%;
+	}
 }
 
 .lf-bg--l .lf-bg__shadow {
 	@include lg {	
 		left: 20%;
   	top: -20%;
+	}
+	@include md {
+		left: 0;
+		top: 20px;
 	}
 }
 
@@ -851,6 +917,10 @@
 	@include lg {
 		right: 20%;
     top: -20%;
+	}
+	@include md {
+		right: 0;
+		top: 20px;
 	}
 }
 
@@ -877,6 +947,11 @@
 	@include lg {
 		width: 100%;
 	}
+	@include md {
+		margin-top: 140px;
+		font-size: 16px;
+		text-align: center;
+	}
 }
 
 // Section little info left Row positions
@@ -891,6 +966,13 @@
 		padding-right: 0;
 		text-align: right;
 	}
+	@include md {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
 }
 
 // Section little info right Row positions
@@ -903,6 +985,12 @@
 		margin-left: 40%;
 		margin-right: 0;
 		padding-left: 0;
+	}
+	@include md {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -934,6 +1022,11 @@
 		height: 105px;
 		font-size: 16px;
 	}
+	@include md {
+		width: 88px;
+		height: 75px;
+		font-size: 16px;
+	}
 }
 
 // Section little info number lg screen positions
@@ -943,12 +1036,22 @@
 		top: 8%;
 		left: 25%
 	}
+	@include md {
+		left: 50%;
+		top: 12%;
+		transform: translateX(-50%);
+	}
 }
 
 .lf-num--r {
 	@include lg {
 		top: 8%;
 		left: 75%
+	}
+	@include md {
+		left: 50%;
+		top: 12%;
+		transform: translateX(-50%);
 	}
 }
 
@@ -959,6 +1062,9 @@
 	left: 50%;
 	top: 35%;
 	transform: translateX(-50%);
+	@include md {
+		top: 27%;
+	}
 }
 
 .lf-num__n::before {
@@ -996,6 +1102,10 @@
 		margin-top: 60px;
 		font-size: 65px;
 	}
+	@include md {
+		margin-top: 0;
+		font-size: 43px;
+	}
 }
 
 // Section little info Paragraph
@@ -1012,6 +1122,10 @@
 	@include lg {
 		max-width: 95%;
 		color: $white;
+	}
+	@include md {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -1031,6 +1145,11 @@
 	@include xl {
 		bottom: -60px;
 	}
+	@include md {
+		left: 50%;
+		bottom: -30px;
+		transform: translateX(-50%);
+	}
 }
 
 // Section little info Right Paragraph Beffore small line for lg screen
@@ -1040,6 +1159,14 @@
 		margin-left: auto;
 		&::before {
 			left: calc(100% - 22px);
+		}
+	}
+	@include md {
+		margin-left: auto;
+		margin-right: auto;
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 }
@@ -1065,6 +1192,12 @@
 	}
 	@include lg {
 		padding-top: 120px;
+	}
+	@include sm {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 80px;
 	}
 }
 
@@ -1092,6 +1225,11 @@
 	@include lg {
 		padding-left: 15px;
 	}
+	@include sm {
+		margin-top: 20px;
+		padding-left: 0;
+		text-align: center;
+	}
 }
 
 .footer-title_in {
@@ -1106,6 +1244,9 @@
 	}
 	@include lg {
 		font-size: 53px;
+	}
+	@include sm {
+		font-size: 36px;
 	}
 }
 
@@ -1123,6 +1264,9 @@
 	@include lg {
 		font-size: 20px;
 	}
+	@include sm {
+		font-size: 18px;
+	}
 }
 
 .footer_app-container {
@@ -1136,6 +1280,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	@include sm {
+		margin-top: 80px;
 	}
 }
 
@@ -1154,9 +1301,18 @@
 	}
 	@include xl {
 		height: 110px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	@include lg {
 		margin-top: 120px;
+	}
+	@include sm {
+		height: 150px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 80px;
 	}
 }
 
@@ -1179,6 +1335,9 @@
 	@include xl {
 		font-size: 16px;
 	}
+	@include sm {
+		margin-top: 20px;
+	}
 }
 
 .social-con__link {
@@ -1191,4 +1350,7 @@
 
 .footer__txt {
 	text-transform: uppercase;
+	@include sm {
+		margin-top: 20px;
+	}
 }

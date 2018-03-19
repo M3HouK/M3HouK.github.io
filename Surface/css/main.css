@@ -1173,7 +1173,7 @@ hr {
     height: 40px;
     background-color: #5e42b0;
     border-radius: 50%;
-    z-index: 11;
+    z-index: 20;
     cursor: pointer;
     -webkit-transition: all .18s linear .1s;
     -o-transition: all .18s linear .1s;
@@ -1251,7 +1251,7 @@ hr {
       width: 0px;
       height: 100%;
       margin: 0;
-      z-index: 10;
+      z-index: 18;
       background-color: #0a0e34;
       overflow: auto; } }
 
